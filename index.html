@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CBBC Student Life Assistant</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header class="topbar">
+
+    <div class="brand">
+        <div class="logo">CB</div>
+
+        <div>
+            <h1>C.B. Bhandari Jain College</h1>
+            <p>AI Student Life Assistant</p>
+        </div>
+    </div>
+
+    <div class="student">
+        <span>Welcome</span>
+        <strong>Student 👋</strong>
+    </div>
+
+</header>
+
+
+<div class="layout">
+
+    <!-- SIDEBAR -->
+
+    <aside class="sidebar">
+
+        <button class="nav active" onclick="showPage('dashboard')">
+            🏠 Dashboard
+        </button>
+
+        <button class="nav" onclick="showPage('assistant')">
+            🤖 Ask AI
+        </button>
+
+        <button class="nav" onclick="showPage('timetable')">
+            📅 Timetable
+        </button>
+
+        <button class="nav" onclick="showPage('courses')">
+            🎓 Courses
+        </button>
+
+        <button class="nav" onclick="showPage('events')">
+            🎉 Events
+        </button>
+
+        <button class="nav" onclick="showPage('faculty')">
+            👨‍🏫 Faculty
+        </button>
+
+        <button class="nav" onclick="showPage('rooms')">
+            📍 Rooms
+        </button>
+
+        <button class="nav" onclick="showPage('notices')">
+            📢 Notices
+        </button>
+
+    </aside>
+
+
+    <!-- MAIN -->
+
+    <main class="main">
+
+        <!-- DASHBOARD -->
+
+        <section id="dashboard" class="page active-page">
+
+            <div class="hero">
+
+                <div>
+                    <p class="small-title">STUDENT DASHBOARD</p>
+
+                    <h2>
+                        Good Morning, Student 👋
+                    </h2>
+
+                    <p>
+                        Everything you need for your college life,
+                        in one place.
+                    </p>
+                </div>
+
+                <div class="hero-icon">
+                    🎓
+                </div>
+
+            </div>
+
+
+            <div class="stats">
+
+                <div class="stat-card">
+                    <span>📚</span>
+                    <h3>5</h3>
+                    <p>Departments</p>
+                </div>
+
+                <div class="stat-card">
+                    <span>📅</span>
+                    <h3>3</h3>
+                    <p>Today's Classes</p>
+                </div>
+
+                <div class="stat-card">
+                    <span>🎉</span>
+                    <h3>4</h3>
+                    <p>Upcoming Events</p>
+                </div>
+
+                <div class="stat-card">
+                    <span>📢</span>
+                    <h3>3</h3>
+                    <p>New Notices</p>
+                </div>
+
+            </div>
+
+
+            <div class="grid">
+
+                <div class="panel">
+
+                    <div class="panel-header">
+                        <h3>📅 Today's Classes</h3>
+
+                        <button onclick="showPage('timetable')">
+                            View All
+                        </button>
+                    </div>
+
+                    <div id="todayClasses"></div>
+
+                </div>
+
+
+                <div class="panel">
+
+                    <div class="panel-header">
+                        <h3>🎉 Upcoming Events</h3>
+
+                        <button onclick="showPage('events')">
+                            View All
+                        </button>
+                    </div>
+
+                    <div id="dashboardEvents"></div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- AI ASSISTANT -->
+
+        <section id="assistant" class="page">
+
+            <div class="page-title">
+
+                <p class="small-title">AI CAMPUS ASSISTANT</p>
+
+                <h2>How can I help you?</h2>
+
+                <p>
+                    Ask questions about classes, rooms, faculty,
+                    departments or events.
+                </p>
+
+            </div>
+
+
+            <div class="chat">
+
+                <div id="chatMessages" class="messages">
+
+                    <div class="message ai">
+                        👋 Hello! I'm your Campus Assistant.
+                        <br><br>
+                        You can ask me things like:
+                        <br><br>
+                        • Where is the BBA department?
+                        <br>
+                        • What classes do I have today?
+                        <br>
+                        • What events are coming up?
+                        <br>
+                        • Who teaches BCA?
+                    </div>
+
+                </div>
+
+
+                <div class="suggestions">
+
+                    <button onclick="askQuestion('Where is the BBA department?')">
+                        📍 BBA Location
+                    </button>
+
+                    <button onclick="askQuestion('What classes do I have today?')">
+                        📅 Today's Classes
+                    </button>
+
+                    <button onclick="askQuestion('What events are coming up?')">
+                        🎉 Upcoming Events
+                    </button>
+
+                    <button onclick="askQuestion('Who teaches BCA?')">
+                        👨‍🏫 BCA Faculty
+                    </button>
+
+                </div>
+
+
+                <div class="chat-input">
+
+                    <input
+                        id="question"
+                        type="text"
+                        placeholder="Ask something about your college..."
+                        onkeydown="handleEnter(event)"
+                    >
+
+                    <button onclick="sendQuestion()">
+                        Send ➤
+                    </button>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- TIMETABLE -->
+
+        <section id="timetable" class="page">
+
+            <div class="page-title">
+
+                <p class="small-title">ACADEMICS</p>
+
+                <h2>Timetable</h2>
+
+            </div>
+
+            <div class="table-container">
+
+                <table>
+
+                    <thead>
+                        <tr>
+                            <th>Time</th>
+                            <th>Subject</th>
+                            <th>Department</th>
+                            <th>Room</th>
+                        </tr>
+                    </thead>
+
+                    <tbody id="timetableData"></tbody>
+
+                </table>
+
+            </div>
+
+        </section>
+
+
+        <!-- COURSES -->
+
+        <section id="courses" class="page">
+
+            <div class="page-title">
+
+                <p class="small-title">ACADEMICS</p>
+
+                <h2>Departments & Courses</h2>
+
+            </div>
+
+            <div id="courseCards" class="cards"></div>
+
+        </section>
+
+
+        <!-- EVENTS -->
+
+        <section id="events" class="page">
+
+            <div class="page-title">
+
+                <p class="small-title">CAMPUS LIFE</p>
+
+                <h2>Upcoming Events</h2>
+
+            </div>
+
+            <div id="eventCards" class="cards"></div>
+
+        </section>
+
+
+        <!-- FACULTY -->
+
+        <section id="faculty" class="page">
+
+            <div class="page-title">
+
+                <p class="small-title">COLLEGE DIRECTORY</p>
+
+                <h2>Faculty</h2>
+
+            </div>
+
+            <div id="facultyCards" class="cards"></div>
+
+        </section>
+
+
+        <!-- ROOMS -->
+
+        <section id="rooms" class="page">
+
+            <div class="page-title">
+
+                <p class="small-title">CAMPUS</p>
+
+                <h2>Rooms & Locations</h2>
+
+            </div>
+
+            <div id="roomCards" class="cards"></div>
+
+        </section>
+
+
+        <!-- NOTICES -->
+
+        <section id="notices" class="page">
+
+            <div class="page-title">
+
+                <p class="small-title">COLLEGE INFORMATION</p>
+
+                <h2>Notices</h2>
+
+            </div>
+
+            <div id="noticeCards" class="cards"></div>
+
+        </section>
+
+    </main>
+
+</div>
+
+
+<script src="app.js"></script>
+
+</body>
+</html>

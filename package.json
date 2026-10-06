@@ -1,0 +1,13 @@
+{
+  "name": "student-life-assistant",
+  "version": "1.0.0",
+  "description": "CBJ College Student Life Assistant",
+  "main": "server/server.js",
+  "scripts": {
+    "start": "node server/server.js",
+    "dev": "node server/server.js"
+  },
+  "dependencies": {
+    "express": "^5.1.0"
+  }
+}

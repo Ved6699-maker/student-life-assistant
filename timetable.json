@@ -1,0 +1,86 @@
+[
+    {
+        "day": "Monday",
+        "time": "09:30 AM",
+        "course": "BCA",
+        "subject": "Database Management Systems",
+        "room": "204"
+    },
+    {
+        "day": "Monday",
+        "time": "11:30 AM",
+        "course": "BCA",
+        "subject": "Web Technology",
+        "room": "205"
+    },
+    {
+        "day": "Monday",
+        "time": "01:00 PM",
+        "course": "BBA",
+        "subject": "Business Economics",
+        "room": "304"
+    },
+    {
+        "day": "Tuesday",
+        "time": "09:30 AM",
+        "course": "BCA",
+        "subject": "Python Programming",
+        "room": "Lab 2"
+    },
+    {
+        "day": "Tuesday",
+        "time": "11:30 AM",
+        "course": "BCA",
+        "subject": "Software Engineering",
+        "room": "203"
+    },
+    {
+        "day": "Tuesday",
+        "time": "01:00 PM",
+        "course": "BBA",
+        "subject": "Marketing Management",
+        "room": "302"
+    },
+    {
+        "day": "Wednesday",
+        "time": "10:00 AM",
+        "course": "BCA",
+        "subject": "Computer Networks",
+        "room": "305"
+    },
+    {
+        "day": "Wednesday",
+        "time": "11:30 AM",
+        "course": "B.Com",
+        "subject": "Financial Accounting",
+        "room": "306"
+    },
+    {
+        "day": "Thursday",
+        "time": "09:30 AM",
+        "course": "BCA",
+        "subject": "Data Analytics",
+        "room": "Lab 1"
+    },
+    {
+        "day": "Thursday",
+        "time": "11:30 AM",
+        "course": "BBA",
+        "subject": "Human Resource Management",
+        "room": "301"
+    },
+    {
+        "day": "Friday",
+        "time": "11:30 AM",
+        "course": "BCA",
+        "subject": "Project Work",
+        "room": "205"
+    },
+    {
+        "day": "Friday",
+        "time": "01:00 PM",
+        "course": "B.Com",
+        "subject": "Business Law",
+        "room": "306"
+    }
+]

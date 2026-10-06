@@ -1,0 +1,51 @@
+[
+    {
+        "id": 1,
+        "name": "Mithun Sir",
+        "department": "BCA",
+        "subject": "Computer Applications",
+        "room": "BCA Block"
+    },
+    {
+        "id": 2,
+        "name": "Varshitha Mam",
+        "department": "Digital Cell",
+        "subject": "Digital Technologies",
+        "room": "Digital Cell"
+    },
+    {
+        "id": 3,
+        "name": "Priyanka Mam",
+        "department": "Digital Cell",
+        "subject": "Technology & Events",
+        "room": "Digital Cell"
+    },
+    {
+        "id": 4,
+        "name": "Vinay Sir",
+        "department": "BBA",
+        "subject": "Business Administration",
+        "room": "Main Block"
+    },
+    {
+        "id": 5,
+        "name": "Shubha Mam",
+        "department": "B.Com",
+        "subject": "Commerce",
+        "room": "Main Block"
+    },
+    {
+        "id": 6,
+        "name": "Githa Mam",
+        "department": "Kannada",
+        "subject": "Kannada",
+        "room": "Main Block"
+    },
+    {
+        "id": 7,
+        "name": "Prahbha mam",
+        "department": "English",
+        "subject": "English",
+        "room": "Main Block"
+    }
+]

@@ -1,0 +1,79 @@
+[
+    {
+        "room": "101",
+        "building": "Main Block",
+        "floor": "1",
+        "type": "Classroom",
+        "status": "Available"
+    },
+    {
+        "room": "102",
+        "building": "Main Block",
+        "floor": "1",
+        "type": "Classroom",
+        "status": "Busy"
+    },
+    {
+        "room": "201",
+        "building": "Main Block",
+        "floor": "2",
+        "type": "Classroom",
+        "status": "Available"
+    },
+    {
+        "room": "202",
+        "building": "Main Block",
+        "floor": "2",
+        "type": "Classroom",
+        "status": "Available"
+    },
+    {
+        "room": "304",
+        "building": "Main Block",
+        "floor": "3",
+        "type": "Classroom",
+        "status": "Available"
+    },
+    {
+        "room": "306",
+        "building": "Main Block",
+        "floor": "3",
+        "type": "Classroom",
+        "status": "Busy"
+    },
+    {
+        "room": "Lab 1",
+        "building": "BCA Block",
+        "floor": "2",
+        "type": "Computer Laboratory",
+        "status": "Available"
+    },
+    {
+        "room": "Lab 2",
+        "building": "BCA Block",
+        "floor": "2",
+        "type": "Computer Laboratory",
+        "status": "Busy"
+    },
+    {
+        "room": "Auditorium",
+        "building": "College Block",
+        "floor": "Ground",
+        "type": "Event Hall",
+        "status": "Available"
+    },
+    {
+        "room": "Library",
+        "building": "Main Block",
+        "floor": "1",
+        "type": "Library",
+        "status": "Available"
+    },
+    {
+        "room": "Canteen",
+        "building": "College Block",
+        "floor": "Ground",
+        "type": "Cafeteria",
+        "status": "Available"
+    }
+]

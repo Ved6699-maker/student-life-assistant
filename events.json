@@ -1,0 +1,38 @@
+[
+    {
+        "id": 1,
+        "name": "Inter-Collegiate Hackathon 2026",
+        "date": "2026-10-15",
+        "time": "9:30 AM",
+        "venue": "College Auditorium",
+        "description": "Innovate • Build • Solve • Compete",
+        "status": "Registration Open"
+    },
+    {
+        "id": 2,
+        "name": "AI Debate Competition",
+        "date": "2026-10-18",
+        "time": "10:30 AM",
+        "venue": "Room 306",
+        "description": "AI — Curse or Boon?",
+        "status": "Registration Open"
+    },
+    {
+        "id": 3,
+        "name": "Digital Cell Workshop",
+        "date": "2026-10-22",
+        "time": "2:00 PM",
+        "venue": "Computer Lab 1",
+        "description": "Technology and Innovation Workshop",
+        "status": "Registration Open"
+    },
+    {
+        "id": 4,
+        "name": "Kannada Folk Fest",
+        "date": "2026-10-30",
+        "time": "9:30 AM",
+        "venue": "Auditorium",
+        "description": "Folk Song and Dance Competitions",
+        "status": "Registration Open"
+    }
+]

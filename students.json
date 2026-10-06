@@ -1,0 +1,34 @@
+[
+    {
+        "id": 1,
+        "name": "Vedant",
+        "registerNumber": "CBJ001",
+        "course": "BCA",
+        "semester": "5th Semester",
+        "section": "A"
+    },
+    {
+        "id": 2,
+        "name": "Rahul",
+        "registerNumber": "CBJ002",
+        "course": "BBA",
+        "semester": "3rd Semester",
+        "section": "A"
+    },
+    {
+        "id": 3,
+        "name": "Priya",
+        "registerNumber": "CBJ003",
+        "course": "B.Com",
+        "semester": "5th Semester",
+        "section": "B"
+    },
+    {
+        "id": 4,
+        "name": "Ananya",
+        "registerNumber": "CBJ004",
+        "course": "BCA",
+        "semester": "3rd Semester",
+        "section": "A"
+    }
+]
